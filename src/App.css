@@ -1,38 +1,122 @@
-.App {
+.app {
+  background: #E5E5E5;
+}
+.text {
+  position: absolute;
+  width: 645px;
+  height: 61px;
+  left: 85px;
+  top: 64px;
+
+  font-family: 'Helvetica', Neue;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 61.05px;
+}
+
+.quote {
+  position: absolute;
+  width: 876px;
+  height: 33px;
+  left: 85px;
+  top: 147px;
+
+  font-family: 'Helvetica', Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #000000;
+}
+
+.first {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 85px;
+  top: 250px;
+
+  background-image: url('./assets/Butterfly1.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+
+.label1 {
+  position: absolute;
+  width: 277px;
+  height: 38px;
+  left: 89px;
+  top: 575px;
+
+  font-family: 'Helvetica', Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
   text-align: center;
+
+  color: #000000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.second {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 584px;
+  top: 250px;
+
+  background-image: url('./assets/Butterfly2.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.label2 {
+  position: absolute;
+  width: 277px;
+  height: 38px;
+  left: 584px;
+  top: 571px;
+
+  font-family: 'Helvetica', Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+
+  color: #000000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.third {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 1072px;
+  top: 250px;
+  
+  background-image: url('./assets/Butterfly3.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.label3 {
+  position: absolute;
+  width: 277px;
+  height: 38px;
+  left: 1083px;
+  top: 576px;
+  
+  font-family: 'Helvetica', Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  
+  color: #000000;
 }

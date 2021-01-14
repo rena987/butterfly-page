@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
+
+
 function App() {
+
+  const [quote, setQuote] = useState('');
+
+  useEffect(() => {
+    async function fetchData() {
+      const res = await fetch(`https://quotes.rest/qod?language=en`);
+      const json = await res.json();
+      console.log(json);
+      setQuote(json.contents.quotes[0].quote)
+    }
+    fetchData();
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className = "text">Butterflies</div>
+      <div className = "quote">{quote}</div>
+      <div className = "first"> </div>
+      <div className = "label1"> Danaus Plexippus </div>
+      <div className = "second"> </div>
+      <div className = "label2"> Morpho Pelides </div>
+      <div className = "third"> </div>
+      <div className = "label3"> Delias Eucharia </div>
     </div>
   );
 }
